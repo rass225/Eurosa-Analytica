@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C03AFEBF27B9CEF10042EB87 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03AFEBE27B9CEF10042EB87 /* MockData.swift */; };
+		C0BC039327BB600E0075DB2F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC039227BB600E0075DB2F /* Profile.swift */; };
+		C0BC039527BC30AC0075DB2F /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC039427BC30AC0075DB2F /* Market.swift */; };
+		C0BC039727BD5CCF0075DB2F /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC039627BD5CCF0075DB2F /* Modifiers.swift */; };
+		C0BC039927BD6EBA0075DB2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC039827BD6EBA0075DB2F /* Extensions.swift */; };
+		C0BC03EE27C066EE0075DB2F /* MarketObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC03ED27C066EE0075DB2F /* MarketObjects.swift */; };
+		C0BC03F027C06D240075DB2F /* MarketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC03EF27C06D240075DB2F /* MarketManager.swift */; };
+		C0BC03F227C2FAB90075DB2F /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC03F127C2FAB90075DB2F /* CoinView.swift */; };
+		C0BC03F527C5E3330075DB2F /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C0BC03F427C5E3330075DB2F /* SwiftUICharts */; };
+		C0BC03FE27C69E580075DB2F /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC03FD27C69E580075DB2F /* Line.swift */; };
+		C0BC040027C69E7F0075DB2F /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC03FF27C69E7F0075DB2F /* LineChartView.swift */; };
+		C0BC040827C69F4C0075DB2F /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC040727C69F4C0075DB2F /* IndicatorPoint.swift */; };
+		C0BC040A27C69F730075DB2F /* Path+QuadCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC040927C69F730075DB2F /* Path+QuadCurve.swift */; };
+		C0BC040C27C69FC60075DB2F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC040B27C69FC60075DB2F /* Helpers.swift */; };
+		C0F77A7427AD65D100ABF179 /* Eurosa_AnalyticaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F77A7327AD65D100ABF179 /* Eurosa_AnalyticaApp.swift */; };
+		C0F77A7627AD65D100ABF179 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F77A7527AD65D100ABF179 /* ContentView.swift */; };
+		C0F77A7827AD65D500ABF179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F77A7727AD65D500ABF179 /* Assets.xcassets */; };
+		C0F77A7B27AD65D500ABF179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F77A7A27AD65D500ABF179 /* Preview Assets.xcassets */; };
+		C0F77A8527AD65D500ABF179 /* Eurosa_AnalyticaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F77A8427AD65D500ABF179 /* Eurosa_AnalyticaTests.swift */; };
+		C0F77A8F27AD65D500ABF179 /* Eurosa_AnalyticaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F77A8E27AD65D500ABF179 /* Eurosa_AnalyticaUITests.swift */; };
+		C0F77A9127AD65D500ABF179 /* Eurosa_AnalyticaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F77A9027AD65D500ABF179 /* Eurosa_AnalyticaUITestsLaunchTests.swift */; };
+		C0F77A9E27B4406D00ABF179 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F77A9D27B4406D00ABF179 /* NetworkLayer.swift */; };
+		C0F77AA127B443CC00ABF179 /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F77AA027B443CC00ABF179 /* APISession.swift */; };
+		C0F77AA327B443D200ABF179 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F77AA227B443D200ABF179 /* APIError.swift */; };
+		C0F77AA527B443D900ABF179 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F77AA427B443D900ABF179 /* APIService.swift */; };
+		C0F77AA727B443E000ABF179 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F77AA627B443E000ABF179 /* RequestBuilder.swift */; };
+		C0F77AA927B4645100ABF179 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F77AA827B4645100ABF179 /* Constants.swift */; };
+		C0F77AAC27B464F000ABF179 /* Signals.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F77AAB27B464F000ABF179 /* Signals.swift */; };
+		C0F77AAE27B4762C00ABF179 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F77AAD27B4762C00ABF179 /* Portfolio.swift */; };
+		C0FA4C0C27CED17000B48B75 /* TokenRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FA4C0B27CED17000B48B75 /* TokenRank.swift */; };
+		C0FA4C0E27CED1A800B48B75 /* TokenIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FA4C0D27CED1A800B48B75 /* TokenIcon.swift */; };
+		C0FA4C1027CED1F100B48B75 /* TokenName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FA4C0F27CED1F100B48B75 /* TokenName.swift */; };
+		C0FA4C1227CED38F00B48B75 /* TokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FA4C1127CED38F00B48B75 /* TokenData.swift */; };
+		C0FA4C1427CED42500B48B75 /* ListCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FA4C1327CED42500B48B75 /* ListCategory.swift */; };
+		C0FA4C1727D1266900B48B75 /* CompoundInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FA4C1627D1266900B48B75 /* CompoundInterest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0F77A8127AD65D500ABF179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0F77A6827AD65D100ABF179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F77A6F27AD65D100ABF179;
+			remoteInfo = "Eurosa Analytica";
+		};
+		C0F77A8B27AD65D500ABF179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0F77A6827AD65D100ABF179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F77A6F27AD65D100ABF179;
+			remoteInfo = "Eurosa Analytica";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C03AFEBE27B9CEF10042EB87 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		C0BC039227BB600E0075DB2F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		C0BC039427BC30AC0075DB2F /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		C0BC039627BD5CCF0075DB2F /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		C0BC039827BD6EBA0075DB2F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C0BC03ED27C066EE0075DB2F /* MarketObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketObjects.swift; sourceTree = "<group>"; };
+		C0BC03EF27C06D240075DB2F /* MarketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketManager.swift; sourceTree = "<group>"; };
+		C0BC03F127C2FAB90075DB2F /* CoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinView.swift; sourceTree = "<group>"; };
+		C0BC03FD27C69E580075DB2F /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		C0BC03FF27C69E7F0075DB2F /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		C0BC040727C69F4C0075DB2F /* IndicatorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
+		C0BC040927C69F730075DB2F /* Path+QuadCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Path+QuadCurve.swift"; sourceTree = "<group>"; };
+		C0BC040B27C69FC60075DB2F /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		C0F77A7027AD65D100ABF179 /* Eurosa Analytica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eurosa Analytica.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F77A7327AD65D100ABF179 /* Eurosa_AnalyticaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eurosa_AnalyticaApp.swift; sourceTree = "<group>"; };
+		C0F77A7527AD65D100ABF179 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C0F77A7727AD65D500ABF179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0F77A7A27AD65D500ABF179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C0F77A8027AD65D500ABF179 /* Eurosa AnalyticaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eurosa AnalyticaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F77A8427AD65D500ABF179 /* Eurosa_AnalyticaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eurosa_AnalyticaTests.swift; sourceTree = "<group>"; };
+		C0F77A8A27AD65D500ABF179 /* Eurosa AnalyticaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eurosa AnalyticaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F77A8E27AD65D500ABF179 /* Eurosa_AnalyticaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eurosa_AnalyticaUITests.swift; sourceTree = "<group>"; };
+		C0F77A9027AD65D500ABF179 /* Eurosa_AnalyticaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eurosa_AnalyticaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C0F77A9D27B4406D00ABF179 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		C0F77AA027B443CC00ABF179 /* APISession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
+		C0F77AA227B443D200ABF179 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		C0F77AA427B443D900ABF179 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C0F77AA627B443E000ABF179 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		C0F77AA827B4645100ABF179 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C0F77AAB27B464F000ABF179 /* Signals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signals.swift; sourceTree = "<group>"; };
+		C0F77AAD27B4762C00ABF179 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
+		C0FA4C0B27CED17000B48B75 /* TokenRank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRank.swift; sourceTree = "<group>"; };
+		C0FA4C0D27CED1A800B48B75 /* TokenIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenIcon.swift; sourceTree = "<group>"; };
+		C0FA4C0F27CED1F100B48B75 /* TokenName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenName.swift; sourceTree = "<group>"; };
+		C0FA4C1127CED38F00B48B75 /* TokenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenData.swift; sourceTree = "<group>"; };
+		C0FA4C1327CED42500B48B75 /* ListCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCategory.swift; sourceTree = "<group>"; };
+		C0FA4C1627D1266900B48B75 /* CompoundInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundInterest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0F77A6D27AD65D100ABF179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0BC03F527C5E3330075DB2F /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F77A7D27AD65D500ABF179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F77A8727AD65D500ABF179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0BC03FC27C69C1E0075DB2F /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				C0BC03FD27C69E580075DB2F /* Line.swift */,
+				C0BC03FF27C69E7F0075DB2F /* LineChartView.swift */,
+				C0BC040727C69F4C0075DB2F /* IndicatorPoint.swift */,
+				C0BC040927C69F730075DB2F /* Path+QuadCurve.swift */,
+				C0BC040B27C69FC60075DB2F /* Helpers.swift */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
+		C0F77A6727AD65D100ABF179 = {
+			isa = PBXGroup;
+			children = (
+				C0F77A7227AD65D100ABF179 /* Eurosa Analytica */,
+				C0F77A8327AD65D500ABF179 /* Eurosa AnalyticaTests */,
+				C0F77A8D27AD65D500ABF179 /* Eurosa AnalyticaUITests */,
+				C0F77A7127AD65D100ABF179 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0F77A7127AD65D100ABF179 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0F77A7027AD65D100ABF179 /* Eurosa Analytica.app */,
+				C0F77A8027AD65D500ABF179 /* Eurosa AnalyticaTests.xctest */,
+				C0F77A8A27AD65D500ABF179 /* Eurosa AnalyticaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0F77A7227AD65D100ABF179 /* Eurosa Analytica */ = {
+			isa = PBXGroup;
+			children = (
+				C0BC03FC27C69C1E0075DB2F /* LineChart */,
+				C0F77A7327AD65D100ABF179 /* Eurosa_AnalyticaApp.swift */,
+				C0F77A7527AD65D100ABF179 /* ContentView.swift */,
+				C0BC03F127C2FAB90075DB2F /* CoinView.swift */,
+				C0F77AAA27B464BE00ABF179 /* Modules */,
+				C0F77A7727AD65D500ABF179 /* Assets.xcassets */,
+				C0F77A9D27B4406D00ABF179 /* NetworkLayer.swift */,
+				C0F77AA827B4645100ABF179 /* Constants.swift */,
+				C0BC039627BD5CCF0075DB2F /* Modifiers.swift */,
+				C0BC039827BD6EBA0075DB2F /* Extensions.swift */,
+				C03AFEBE27B9CEF10042EB87 /* MockData.swift */,
+				C0F77A9F27B443BA00ABF179 /* API */,
+				C0F77A7927AD65D500ABF179 /* Preview Content */,
+			);
+			path = "Eurosa Analytica";
+			sourceTree = "<group>";
+		};
+		C0F77A7927AD65D500ABF179 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C0F77A7A27AD65D500ABF179 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C0F77A8327AD65D500ABF179 /* Eurosa AnalyticaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0F77A8427AD65D500ABF179 /* Eurosa_AnalyticaTests.swift */,
+			);
+			path = "Eurosa AnalyticaTests";
+			sourceTree = "<group>";
+		};
+		C0F77A8D27AD65D500ABF179 /* Eurosa AnalyticaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0F77A8E27AD65D500ABF179 /* Eurosa_AnalyticaUITests.swift */,
+				C0F77A9027AD65D500ABF179 /* Eurosa_AnalyticaUITestsLaunchTests.swift */,
+			);
+			path = "Eurosa AnalyticaUITests";
+			sourceTree = "<group>";
+		};
+		C0F77A9F27B443BA00ABF179 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C0F77AA627B443E000ABF179 /* RequestBuilder.swift */,
+				C0F77AA427B443D900ABF179 /* APIService.swift */,
+				C0F77AA227B443D200ABF179 /* APIError.swift */,
+				C0F77AA027B443CC00ABF179 /* APISession.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C0F77AAA27B464BE00ABF179 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C0FA4C1527D1265000B48B75 /* Signals */,
+				C0F77AAD27B4762C00ABF179 /* Portfolio.swift */,
+				C0BC039227BB600E0075DB2F /* Profile.swift */,
+				C0FA4C0927CED14200B48B75 /* Market */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C0FA4C0927CED14200B48B75 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				C0FA4C0A27CED14D00B48B75 /* SubViews */,
+				C0BC039427BC30AC0075DB2F /* Market.swift */,
+				C0BC03ED27C066EE0075DB2F /* MarketObjects.swift */,
+				C0BC03EF27C06D240075DB2F /* MarketManager.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		C0FA4C0A27CED14D00B48B75 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				C0FA4C0B27CED17000B48B75 /* TokenRank.swift */,
+				C0FA4C0D27CED1A800B48B75 /* TokenIcon.swift */,
+				C0FA4C0F27CED1F100B48B75 /* TokenName.swift */,
+				C0FA4C1127CED38F00B48B75 /* TokenData.swift */,
+				C0FA4C1327CED42500B48B75 /* ListCategory.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		C0FA4C1527D1265000B48B75 /* Signals */ = {
+			isa = PBXGroup;
+			children = (
+				C0F77AAB27B464F000ABF179 /* Signals.swift */,
+				C0FA4C1627D1266900B48B75 /* CompoundInterest.swift */,
+			);
+			path = Signals;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0F77A6F27AD65D100ABF179 /* Eurosa Analytica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F77A9427AD65D500ABF179 /* Build configuration list for PBXNativeTarget "Eurosa Analytica" */;
+			buildPhases = (
+				C0F77A6C27AD65D100ABF179 /* Sources */,
+				C0F77A6D27AD65D100ABF179 /* Frameworks */,
+				C0F77A6E27AD65D100ABF179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Eurosa Analytica";
+			packageProductDependencies = (
+				C0BC03F427C5E3330075DB2F /* SwiftUICharts */,
+			);
+			productName = "Eurosa Analytica";
+			productReference = C0F77A7027AD65D100ABF179 /* Eurosa Analytica.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0F77A7F27AD65D500ABF179 /* Eurosa AnalyticaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F77A9727AD65D500ABF179 /* Build configuration list for PBXNativeTarget "Eurosa AnalyticaTests" */;
+			buildPhases = (
+				C0F77A7C27AD65D500ABF179 /* Sources */,
+				C0F77A7D27AD65D500ABF179 /* Frameworks */,
+				C0F77A7E27AD65D500ABF179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F77A8227AD65D500ABF179 /* PBXTargetDependency */,
+			);
+			name = "Eurosa AnalyticaTests";
+			productName = "Eurosa AnalyticaTests";
+			productReference = C0F77A8027AD65D500ABF179 /* Eurosa AnalyticaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0F77A8927AD65D500ABF179 /* Eurosa AnalyticaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F77A9A27AD65D500ABF179 /* Build configuration list for PBXNativeTarget "Eurosa AnalyticaUITests" */;
+			buildPhases = (
+				C0F77A8627AD65D500ABF179 /* Sources */,
+				C0F77A8727AD65D500ABF179 /* Frameworks */,
+				C0F77A8827AD65D500ABF179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F77A8C27AD65D500ABF179 /* PBXTargetDependency */,
+			);
+			name = "Eurosa AnalyticaUITests";
+			productName = "Eurosa AnalyticaUITests";
+			productReference = C0F77A8A27AD65D500ABF179 /* Eurosa AnalyticaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0F77A6827AD65D100ABF179 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C0F77A6F27AD65D100ABF179 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					C0F77A7F27AD65D500ABF179 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C0F77A6F27AD65D100ABF179;
+					};
+					C0F77A8927AD65D500ABF179 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C0F77A6F27AD65D100ABF179;
+					};
+				};
+			};
+			buildConfigurationList = C0F77A6B27AD65D100ABF179 /* Build configuration list for PBXProject "Eurosa Analytica" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0F77A6727AD65D100ABF179;
+			packageReferences = (
+				C0BC03F327C5E3330075DB2F /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
+			productRefGroup = C0F77A7127AD65D100ABF179 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0F77A6F27AD65D100ABF179 /* Eurosa Analytica */,
+				C0F77A7F27AD65D500ABF179 /* Eurosa AnalyticaTests */,
+				C0F77A8927AD65D500ABF179 /* Eurosa AnalyticaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0F77A6E27AD65D100ABF179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F77A7B27AD65D500ABF179 /* Preview Assets.xcassets in Resources */,
+				C0F77A7827AD65D500ABF179 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F77A7E27AD65D500ABF179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F77A8827AD65D500ABF179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0F77A6C27AD65D100ABF179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FA4C1027CED1F100B48B75 /* TokenName.swift in Sources */,
+				C0F77AA727B443E000ABF179 /* RequestBuilder.swift in Sources */,
+				C0F77A9E27B4406D00ABF179 /* NetworkLayer.swift in Sources */,
+				C0F77AAC27B464F000ABF179 /* Signals.swift in Sources */,
+				C0BC03F227C2FAB90075DB2F /* CoinView.swift in Sources */,
+				C0BC03F027C06D240075DB2F /* MarketManager.swift in Sources */,
+				C0BC039327BB600E0075DB2F /* Profile.swift in Sources */,
+				C0FA4C1427CED42500B48B75 /* ListCategory.swift in Sources */,
+				C03AFEBF27B9CEF10042EB87 /* MockData.swift in Sources */,
+				C0F77AA127B443CC00ABF179 /* APISession.swift in Sources */,
+				C0FA4C0E27CED1A800B48B75 /* TokenIcon.swift in Sources */,
+				C0F77AAE27B4762C00ABF179 /* Portfolio.swift in Sources */,
+				C0F77A7627AD65D100ABF179 /* ContentView.swift in Sources */,
+				C0F77AA927B4645100ABF179 /* Constants.swift in Sources */,
+				C0BC040827C69F4C0075DB2F /* IndicatorPoint.swift in Sources */,
+				C0BC040027C69E7F0075DB2F /* LineChartView.swift in Sources */,
+				C0FA4C1727D1266900B48B75 /* CompoundInterest.swift in Sources */,
+				C0F77AA327B443D200ABF179 /* APIError.swift in Sources */,
+				C0FA4C1227CED38F00B48B75 /* TokenData.swift in Sources */,
+				C0F77AA527B443D900ABF179 /* APIService.swift in Sources */,
+				C0BC039927BD6EBA0075DB2F /* Extensions.swift in Sources */,
+				C0BC03EE27C066EE0075DB2F /* MarketObjects.swift in Sources */,
+				C0BC040A27C69F730075DB2F /* Path+QuadCurve.swift in Sources */,
+				C0BC03FE27C69E580075DB2F /* Line.swift in Sources */,
+				C0BC039727BD5CCF0075DB2F /* Modifiers.swift in Sources */,
+				C0BC040C27C69FC60075DB2F /* Helpers.swift in Sources */,
+				C0F77A7427AD65D100ABF179 /* Eurosa_AnalyticaApp.swift in Sources */,
+				C0BC039527BC30AC0075DB2F /* Market.swift in Sources */,
+				C0FA4C0C27CED17000B48B75 /* TokenRank.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F77A7C27AD65D500ABF179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F77A8527AD65D500ABF179 /* Eurosa_AnalyticaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F77A8627AD65D500ABF179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F77A9127AD65D500ABF179 /* Eurosa_AnalyticaUITestsLaunchTests.swift in Sources */,
+				C0F77A8F27AD65D500ABF179 /* Eurosa_AnalyticaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0F77A8227AD65D500ABF179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0F77A6F27AD65D100ABF179 /* Eurosa Analytica */;
+			targetProxy = C0F77A8127AD65D500ABF179 /* PBXContainerItemProxy */;
+		};
+		C0F77A8C27AD65D500ABF179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0F77A6F27AD65D100ABF179 /* Eurosa Analytica */;
+			targetProxy = C0F77A8B27AD65D500ABF179 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C0F77A9227AD65D500ABF179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0F77A9327AD65D500ABF179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0F77A9527AD65D500ABF179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Eurosa Analytica/Preview Content\"";
+				DEVELOPMENT_TEAM = Q6B2DLVPJB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "footballHighlights.Eurosa-Analytica";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C0F77A9627AD65D500ABF179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Eurosa Analytica/Preview Content\"";
+				DEVELOPMENT_TEAM = Q6B2DLVPJB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "footballHighlights.Eurosa-Analytica";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C0F77A9827AD65D500ABF179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6B2DLVPJB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "footballHighlights.Eurosa-AnalyticaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eurosa Analytica.app/Eurosa Analytica";
+			};
+			name = Debug;
+		};
+		C0F77A9927AD65D500ABF179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6B2DLVPJB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "footballHighlights.Eurosa-AnalyticaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eurosa Analytica.app/Eurosa Analytica";
+			};
+			name = Release;
+		};
+		C0F77A9B27AD65D500ABF179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6B2DLVPJB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "footballHighlights.Eurosa-AnalyticaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Eurosa Analytica";
+			};
+			name = Debug;
+		};
+		C0F77A9C27AD65D500ABF179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6B2DLVPJB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "footballHighlights.Eurosa-AnalyticaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Eurosa Analytica";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0F77A6B27AD65D100ABF179 /* Build configuration list for PBXProject "Eurosa Analytica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F77A9227AD65D500ABF179 /* Debug */,
+				C0F77A9327AD65D500ABF179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F77A9427AD65D500ABF179 /* Build configuration list for PBXNativeTarget "Eurosa Analytica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F77A9527AD65D500ABF179 /* Debug */,
+				C0F77A9627AD65D500ABF179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F77A9727AD65D500ABF179 /* Build configuration list for PBXNativeTarget "Eurosa AnalyticaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F77A9827AD65D500ABF179 /* Debug */,
+				C0F77A9927AD65D500ABF179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F77A9A27AD65D500ABF179 /* Build configuration list for PBXNativeTarget "Eurosa AnalyticaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F77A9B27AD65D500ABF179 /* Debug */,
+				C0F77A9C27AD65D500ABF179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0BC03F327C5E3330075DB2F /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C0BC03F427C5E3330075DB2F /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0BC03F327C5E3330075DB2F /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C0F77A6827AD65D100ABF179 /* Project object */;
+}
